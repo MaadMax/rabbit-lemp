@@ -56,5 +56,8 @@ printf "${GREEN}Restarting NGINX and PHP5 FPM...${NC}"
 service php5-fpm restart
 service nginx restart
 
+#Unset no more used variables
+unset GREEN
+unset NC
 
 exit 0
