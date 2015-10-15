@@ -32,7 +32,7 @@ $ su root
 ```
 
 ```sh
-$ git clone [git-repo-url] /tmp/rabbit-lemp
+$ git clone https://github.com/MaadMax/rabbit-lemp.git /tmp/rabbit-lemp
 $ cd /tmp/rabbit-lemp
 $ chmod +x rabbit-lemp.sh
 $ ./rabbit-lemp.sh
