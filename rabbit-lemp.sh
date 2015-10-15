@@ -46,11 +46,12 @@ printf "${GREEN}Install APC Cache${NC}"
 apt-get install php-apc -y
 
 printf "${GREEN}Modifying config...${NC}"
-sed  '/\[CLI Server\]/i [APC]' /etc/php5/fpm/php.ini
-sed  '/\[CLI Server\]/i apc.enabled=1' /etc/php5/fpm/php.ini
-sed  '/\[CLI Server\]/i apc.shm_size=256M' /etc/php5/fpm/php.ini
-sed  '/\[CLI Server\]/i apc.stat=1' /etc/php5/fpm/php.ini
-sed  '/\[CLI Server\]/i ' /etc/php5/fpm/php.ini
+echo '' >> /etc/php5/fpm/php.ini
+echo '[APC]' >> /etc/php5/fpm/php.ini
+echo 'apc.enabled=1' >> /etc/php5/fpm/php.ini
+echo 'apc.shm_size=256M' >> /etc/php5/fpm/php.ini
+echo 'apc.stat=1' >> /etc/php5/fpm/php.ini
+echo '' >> /etc/php5/fpm/php.ini
 
 printf "${GREEN}Restarting NGINX and PHP5 FPM...${NC}"
 service php5-fpm restart
