@@ -28,14 +28,14 @@ rabbit-lemp is fully based on bash script, but this projects is here thanks to :
 You only need to be logged as root, and to clone the repo in tmp folder for example
 
 ```sh
-$ su root
+su root
 ```
 
 ```sh
-$ git clone https://github.com/MaadMax/rabbit-lemp.git /tmp/rabbit-lemp
-$ cd /tmp/rabbit-lemp
-$ chmod +x rabbit-lemp.sh
-$ ./rabbit-lemp.sh
+git clone https://github.com/MaadMax/rabbit-lemp.git /tmp/rabbit-lemp
+cd /tmp/rabbit-lemp
+chmod +x rabbit-lemp.sh
+./rabbit-lemp.sh
 ```
 
 
