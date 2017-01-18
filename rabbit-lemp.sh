@@ -36,9 +36,9 @@ printf "${GREEN}Restarting PHP5 FPM...${NC}"
 service php5-fpm restart
 
 printf "${GREEN}Install MariaDB${NC}"
-apt-get install python-software-properties -y
+apt-get install software-properties-common -y
 apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xcbcb082a1bb943db
-add-apt-repository 'deb http://mirror6.layerjet.com/mariadb/repo/10.1/debian wheezy main'
+add-apt-repository 'deb [arch=amd64,i386,ppc64el] http://fr.mirror.babylon.network/mariadb/repo/10.1/debian jessie main'
 apt-get update
 apt-get install mariadb-server -y
 
