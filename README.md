@@ -25,10 +25,15 @@ rabbit-lemp is fully based on bash script, but this projects is here thanks to :
 
 ### Installation
 
-You only need to be logged as root, and to clone the repo in tmp folder for example
+You only need to be logged as root, install git if it isn't already and to clone the repo in tmp folder for example
 
 ```sh
 su root
+```
+
+```sh
+apt-get update
+apt-get install git-core
 ```
 
 ```sh
